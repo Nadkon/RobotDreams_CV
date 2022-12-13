@@ -1,0 +1,13 @@
+.table-experience,
+.row-experience,
+.data-experience {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+.row-head {
+  background-color: lightgray;
+}
+.data-date {
+  font-weight: bold;
+}
