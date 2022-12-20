@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hire me</title>
+</head>
+
+<body>
+  <div class="contact">
+    <h2>Hire me</h2>
+    <h3>Contact information</h3>
+    <table border="1" cellspacing="0" cellpadding="10px">
+      <tr>
+        <th>Phone</th>
+        <td>+380999030943</td>
+      </tr>
+      <tr>
+        <th>Address</th>
+        <td>Ukraine</td>
+      </tr>
+    </table>
+    <form action="./forms.html" method="get">
+      <fieldset>
+        <legend>Contact form</legend>
+        <p><label>E-mail<span style="color:red;">*</span>:
+            <input type="email" name="email" required style="margin-left: 23px;">
+          </label>
+        </p>
+        <p>
+          <label>Description:
+            <textarea name="description" cols="30" rows="10" style="resize: none;"></textarea>
+          </label>
+        </p>
+        <p>
+          <label>Work type:
+            <select name="work-type" required style="margin-left: 10px;">
+              <option value="office">Office</option>
+              <option value="remote">Remote</option>
+              <option value="project-based">Project-based</option>
+            </select>
+          </label>
+        </p>
+        <p>
+          <input type="button" value="Hire me">
+        </p>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>
