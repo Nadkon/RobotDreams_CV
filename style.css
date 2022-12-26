@@ -3,10 +3,27 @@ body {
   font-family: Arial,
     Helvetica,
     sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 h1 {
   font-style: italic;
+  border-bottom: 1px solid #c8f1e5;
+}
+
+.avatar {
+  border: 2px solid #c8f1e5;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.status,
+.table-experience,
+.skills,
+.achievements {
+  border-bottom: 1px solid #c8f1e5;
 }
 
 .bold {
@@ -23,6 +40,11 @@ h1 {
 
 th {
   text-transform: uppercase;
+  background-color: #BAEFDF;
+}
+
+td {
+  background-color: #DEEBE7;
 }
 
 .site {
@@ -44,6 +66,7 @@ th {
 .data-date {
   font-weight: bold;
 }
-.skills{
+
+.skills {
   list-style: square;
 }
