@@ -53,6 +53,10 @@ h1 {
   padding: 10px;
 }
 
+.table-experience {
+  width: 100%;
+}
+
 th {
   text-transform: uppercase;
   background-color: #BAEFDF;
