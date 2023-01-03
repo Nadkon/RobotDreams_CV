@@ -66,15 +66,18 @@ td {
   background-color: #DEEBE7;
 }
 
-.site {
+.site,
+.main-info_about a {
   color: #00f;
 }
 
-.site:visited {
+.site:visited,
+.main-info_about a {
   color: #005;
 }
 
-.site:hover {
+.site:hover,
+.main-info_about a {
   text-decoration: none;
 }
 
