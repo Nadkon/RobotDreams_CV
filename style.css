@@ -24,6 +24,9 @@ body {
     'side experience'
     'side achievements'
   ;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 10px auto;
 }
 
 .side {
@@ -50,6 +53,7 @@ body {
 .side-bar {
   background-color: #86a3b4;
   padding-left: 15px;
+  border-radius: 10px;
 }
 
 .header_h1 {
