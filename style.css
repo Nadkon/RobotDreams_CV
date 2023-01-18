@@ -53,7 +53,7 @@ body {
 .side-bar {
   background-color: #86a3b4;
   padding-left: 15px;
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
 }
 
 .header_h1 {
