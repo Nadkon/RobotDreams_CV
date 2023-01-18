@@ -74,6 +74,10 @@ h2 {
   margin-bottom: 3px;
 }
 
+.avatar {
+  width: 93%;
+}
+
 .address-element {
   font-size: 16px;
 }
