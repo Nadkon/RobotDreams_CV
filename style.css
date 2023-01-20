@@ -114,13 +114,91 @@ h2 {
 .btn {
   width: 150px;
   height: 50px;
-  background-color: antiquewhite;
-  border-radius: 10px;
+  background-color: #0048D9;
+  border-radius: 6px;
 }
 
 .btn a {
   display: block;
   padding: 15px 45px;
   text-decoration: none;
-  color: #1c2e8c;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #002266
+}
+
+/* FORM */
+.contact {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form__header {
+  text-align: center;
+}
+
+.contact-form__header+h3 {
+  text-align: center;
+}
+
+.contact-form__table {
+  margin-bottom: 20px;
+}
+
+.contact-form__table th {
+  text-align: left;
+  max-width: 50%;
+}
+
+.email-container,
+.description-container {
+  margin-left: 10px;
+}
+
+.contact-form__legend {
+  color: #52575C;
+  font-size: 16ox;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.contact-form__email {
+  width: 70%;
+  height: 25px;
+  font-style: italic;
+  padding: 0 10px;
+}
+
+.contact-form__textarea {
+  resize: none;
+  width: 70%;
+  height: 100px;
+  font-style: italic;
+  padding: 10px;
+}
+
+.contact label {
+  color: #6f7482;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.contact-form__select {
+  margin-left: 10px;
+  width: 70%;
+  background-color: #f8fafc;
+  height: 30px;
+}
+
+.text-btn {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-left: 10px;
 }
