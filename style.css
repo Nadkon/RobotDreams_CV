@@ -128,12 +128,12 @@ h2 {
 }
 
 .btn:hover {
-  background-color: #002266
+  background-color: #002266;
 }
 
 /* FORM */
 .contact {
-  max-width: 500px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -143,6 +143,19 @@ h2 {
 
 .contact-form__header+h3 {
   text-align: center;
+}
+
+.contact-form__table,
+.contact-form__table th,
+.contact-form__table td {
+  border: 2px solid;
+  width: 100%;
+  border-collapse: collapse;
+  padding: 5px 10px;
+}
+
+.contact-form__table th {
+  width: 40%
 }
 
 .contact-form__table {
@@ -167,13 +180,19 @@ h2 {
 }
 
 .contact-form__email {
+  display: block;
   width: 70%;
   height: 25px;
   font-style: italic;
   padding: 0 10px;
 }
 
+.contact-form__email:invalid {
+  border: 2px solid red;
+}
+
 .contact-form__textarea {
+  display: block;
   resize: none;
   width: 70%;
   height: 100px;
@@ -190,6 +209,7 @@ h2 {
 }
 
 .contact-form__select {
+  display: block;
   margin-left: 10px;
   width: 70%;
   background-color: #f8fafc;
@@ -201,4 +221,13 @@ h2 {
   font-weight: 500;
   color: #ffffff;
   margin-left: 10px;
+  cursor: pointer;
+}
+
+div.btn {
+  margin-left: 10px;
+}
+
+a.back-btn {
+  padding: 15px 33px;
 }
