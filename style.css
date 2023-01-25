@@ -5,6 +5,9 @@ body {
     sans-serif;
   max-width: 1440px;
   margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  color: #263036;
 }
 
 .body {
@@ -17,7 +20,7 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 30% 70%;
   grid-template-areas:
     'side summary'
     'side skills'
@@ -53,33 +56,53 @@ body {
 .side-bar {
   background-color: #86a3b4;
   padding-left: 15px;
-  border-radius: 10px 0 0 10px;
+  padding-top: 29px;
 }
 
 .header_h1 {
   color: #1c2e8c;
+  font-size: 40px;
+  padding-left: 30px;
 }
 
 .white {
   color: #fff;
 }
 
-
-h2 {
+.side-bar h2 {
   margin-bottom: 0;
+  font-size: 32px;
+  padding-top: 18px;
+  margin-left: 24px;
+  border-bottom: 9px solid #1e1e1e;
+  display: inline-block;
+  width: 80%
 }
 
 .side-bar__contact h3,
 .side-bar__language h3 {
   margin-bottom: 3px;
+  font-size: 24px;
+}
+
+.side-bar__contact h3 {
+  padding-top: 8px;
+  padding-left: 24px;
+  margin-bottom: 11px;
 }
 
 .avatar {
-  width: 93%;
+  width: 79%;
+  margin-top: 14px;
 }
 
 .address-element {
   font-size: 16px;
+  padding-left: 26px
+}
+
+.address-element a {
+  text-decoration: none;
 }
 
 .line {
@@ -88,27 +111,45 @@ h2 {
   height: 3px;
   background-color: #1e1e1e;
   margin-bottom: 20px;
+  margin-top: 13px;
+  margin-left: 22px;
 }
 
 .side-bar__language p {
-  font-weight: bold;
+  font-weight: 600;
   margin: 2px;
+  font-size: 20px;
+  color: #1E1E1E;
+  padding-left: 20px;
+  padding-top: 7px;
 }
 
 /* right-bar */
-.summary,
-.skills,
-.experience,
-.achievements {
-  padding-left: 15px;
+.right-side_section {
+  padding-left: 57px;
 }
 
-.row-head {
-  text-align: left;
+.right-side_section h2 {
+  font-size: 36px;
+  color: #1E1E1E;
+  padding-left: 3px;
+  padding-top: 29px;
+  border-bottom: 9px solid #1e1e1e;
+  display: inline-block;
+  width: 80%;
+  padding-bottom: 20px;
 }
 
-.row-experience {
-  font-size: 12px;
+.experience p {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.work-place {
+  margin-bottom: 50px;
 }
 
 .btn {
