@@ -5,87 +5,87 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css" />
   <title>CV: Nadiia Kononykihna</title>
 </head>
 
 <body>
+
   <div class="body">
-    <div class="main-info wrap">
-      <div class="main-info_about">
-        <h1>Nadiia Kononykhina</h1>
-        <a href="./form.html">Hire me</a>
-        <p class="bold status"><em>switcher to IT area:</em> Frontend developer</p>
+    <div class="grid-container">
+      <!-- block1 -->
+      <div class="side-bar side">
+        <div class="side-bar__header">
+          <h1 class="header_h1"><span class="white"> Nadiia</span> Kononykhina</h1>
+          <div class="img">
+            <img src="./img/avatar.jpg" alt="avatar" class="avatar" />
+            </div>
+        </div>
+        <div class="side-bar__contact">
+          <h2>Contact</h2>
+          <h3>Address</h3>
+          <span class="address-element"> Kyiv, Ukraine</span>
+          <h3>Phone</h3>
+
+          <span class="address-element"><a href="tel:+380999030943"></a>+380999030943</span>
+          <h3>E-mail</h3>
+
+          <span class="address-element"><a href="mailto:nadkon@gmail.com">nadkon@gmail.com</a></span>
+        </div>
+
+        <div class="side-bar__language">
+          <h2>Languages</h2>
+          <p>Ukrainian - native</p>
+          <p>English - C1</p>
+        </div>
       </div>
-      <img src="./img/avatar.jpg" alt="avatar" width="200px" class="avatar" />
 
-    </div>
-    <div>
-      <div>
-        <h2>Work experience</h2>
-        <table class="table-experience">
-          <thead>
-            <tr class="row-experience row-head">
-              <th class="data-experience">Period</th>
-              <th class="data-experience">Position</th>
-              <th class="data-experience">Company</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="row-experience">
-              <td class="data-experience data-date">2001 - 2003</td>
-              <td class="data-experience">Operator of Call Center</td>
-              <td class="data-experience">
-                East-European Communication Services Ltd.
-              </td>
-            </tr>
-            <tr class="row-experience">
-              <td class="data-experience data-date" rowspan="2">2003 - 2004</td>
-              <td class="data-experience" rowspan="2">
-                General Assistant of Customer Contact Centre
-              </td>
-              <td class="data-experience">Samsung Electronics</td>
-            </tr>
-            <tr class="row-experience">
-              <td class="data-experience">
-                <a href="https://samsung.com.ua/" target="_blank" class="site">Site link</a>
-              </td>
-            </tr>
-
-            <tr class="row-experience">
-              <td class="data-experience data-date">2004 - 2005</td>
-              <td class="data-experience">
-                Office-Manager, Regulatory Affairs Associate
-              </td>
-              <td class="data-experience">East Site Management and Research</td>
-            </tr>
-            <tr class="row-experience">
-              <td class="data-experience data-date" rowspan="2">2005 to present</td>
-              <td class="data-experience" rowspan="2">Depot manager</td>
-              <td class="data-experience">Worldwide Clinical trials</td>
-            </tr>
-            <tr class="row-experience">
-              <td class="data-experience">
-                <a href="https://www.worldwide.com/" target="_blank" class="site">Site link</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- block2 -->
+      <div class="summary right-side_section">
+        <h2>Summary</h2>
+        <p>
+        <p><em>switcher to IT area:</em> Frontend developer</p>
+        </p>
+        <div class="btn"><a href="./form.html">Hire me</a></div>
       </div>
-      <h2>Skills</h2>
-      <ul class="skills">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
 
-      <h2>Achievements</h2>
-      <ol class="achievements">
-        <li>Completed course for QA at EPAM</li>
-        <li>Completed marathon at ITGo</li>
-        <li>Received a tuition grant at RobotDreams</li>
-        <li>......</li>
-      </ol>
+      <!-- block3 -->
+      <div class="skills right-side_section">
+        <h2>Skills Highlights</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+      </div>
+
+      <!-- block4 -->
+      <div class="experience right-side_section">
+        <h2>Work Experience</h2>
+        <div class="work-place">
+          <p><span class="bold">Name of employer:</span> East Site Management and Research</p>
+          <p><span class="bold">Dates of employment:</span> 2004 - 2005</p>
+          <p><span class="bold">Job title:</span> Office-Manager, Regulatory Affairs Associate</p>
+        </div>
+        <div class="work-place">
+          <p><span class="bold">Name of employer:</span> Worldwide Clinical trials</p>
+          <p><span class="bold">Dates of employment:</span> 2005 to present</p>
+          <p><span class="bold">Job title:</span> Depot Manager</p>
+        </div>
+      </div>
+
+
+      <!-- block5 -->
+      <div class="achievements right-side_section">
+        <h2>Achievements</h2>
+        <ol>
+          <li>Completed course for QA at EPAM</li>
+          <li>Completed marathon at ITGo</li>
+          <li>Received a tuition grant at RobotDreams</li>
+          <li>......</li>
+        </ol>
+      </div>
     </div>
   </div>
 </body>
