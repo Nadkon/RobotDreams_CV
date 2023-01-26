@@ -27,17 +27,17 @@
       <fieldset>
         <legend class="contact-form__legend">Contact form</legend>
         <p class="email-container"><label>E-mail<span style="color:red;">*</span>:
-            <input type="email" name="email" required class="contact-form__email" placeholder="xxxxx@xxxxx.xxx">
+            <input type="email" name="email" required class="contact-form__email checked" value="xxxxx@xxxxx.xxx">
           </label>
         </p>
         <p class="description-container">
           <label>Description:
-            <textarea name="description" class="contact-form__textarea" placeholder="Hint text"></textarea>
+            <textarea name="description" class="contact-form__textarea checked" placeholder="Hint text"></textarea>
           </label>
         </p>
         <p>
           <label>Work type:
-            <select name="work-type" required class="contact-form__select">
+            <select name="work-type" required class="contact-form__select checked">
               <option value="office">Office</option>
               <option value="remote">Remote</option>
               <option value="project-based">Project-based</option>
@@ -46,7 +46,7 @@
         </p>
         <p>
           <input type="submit" class="btn text-btn" value="Hire me">
-        <div class="btn "><a href="./index.html" class="back-btn">Home page</a></div>
+        <div class="btn homepage-btn"><a href="./index.html" class="back-btn">Home page</a></div>
         </p>
       </fieldset>
     </form>

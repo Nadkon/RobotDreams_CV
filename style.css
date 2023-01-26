@@ -223,6 +223,12 @@ body {
   margin-left: 10px;
 }
 
+.checked:hover {
+  border: 1px solid black
+}
+.checked:focus {
+  outline: 2px solid green;
+}
 .contact-form__legend {
   color: #52575C;
   font-size: 16ox;
@@ -236,6 +242,9 @@ body {
   height: 25px;
   font-style: italic;
   padding: 0 10px;
+  appearance: none;
+  background: #F8FAFC;
+  border: none
 }
 
 .contact-form__email:invalid {
@@ -250,6 +259,8 @@ body {
   height: 100px;
   font-style: italic;
   padding: 10px;
+  border: none;
+  background: #F8FAFC;
 }
 
 .contact label {
@@ -263,9 +274,10 @@ body {
 .contact-form__select {
   display: block;
   margin-left: 10px;
-  width: 70%;
+  width: 72%;
   background-color: #f8fafc;
   height: 30px;
+  border: none;
 }
 
 .contact-form__select option {
@@ -287,4 +299,13 @@ div.btn {
 
 a.back-btn {
   padding: 15px 33px;
+  color: black;
+}
+
+.homepage-btn {
+  background-color: aqua;
+}
+
+.homepage-btn:hover {
+  background-color: blueviolet;
 }
