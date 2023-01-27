@@ -186,6 +186,7 @@ body {
 .contact {
   max-width: 1024px;
   margin: 0 auto;
+  height: 95vh;
 }
 
 .contact-form__header {
@@ -209,6 +210,13 @@ body {
   width: 40%
 }
 
+.form {
+  width: 500px;
+  position: sticky;
+  top: 31vh;
+  left: 30%;
+}
+
 .contact-form__table {
   margin-bottom: 20px;
 }
@@ -226,9 +234,11 @@ body {
 .checked:hover {
   border: 1px solid black
 }
+
 .checked:focus {
   outline: 2px solid green;
 }
+
 .contact-form__legend {
   color: #52575C;
   font-size: 16ox;
