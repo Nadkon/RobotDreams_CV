@@ -3,7 +3,11 @@
   --color-main: #263036;
   --color-secondary: #1E1E1E;
   --color-header-blue: #1c2e8c;
-  --color-header-light: #fff;
+  --color-light: #fff;
+  --color-black: #000;
+  --color-btn: #0048D9;
+  --color-btn-hover: #002266;
+  --bg-color-form: #f8fafc;
   --bg-color-left: #86a3b4;
 
   /* font */
@@ -14,9 +18,11 @@
   --font-size-medium: 24px;
   --font-size-small: 20px;
 
-  /* paddings and margins */
+  /* ize */
   --space-main: 10px;
   --space-small: 2px;
+  --border-radius-large: 10px;
+  --border-radius-medium: 6px;
 }
 
 body {
@@ -29,7 +35,7 @@ body {
 .body {
   margin: 0 auto;
   width: 90%;
-  padding-bottom: 20px;
+  padding-bottom: calc(var(--space-main));
 }
 
 
@@ -42,8 +48,7 @@ body {
     'side experience'
     'side achievements'
   ;
-  border: 1px solid grey;
-  border-radius: 10px;
+  border-radius: var(--border-radius-large);
   margin: var(--space-main) auto;
 }
 
@@ -83,11 +88,11 @@ body {
 .header_h1 {
   color: var(--color-header-blue);
   font-size: var(--font-size-2xlarge);
-  padding-left: 30px;
+  padding-left: calc(var(--space-main)*3);
 }
 
 .white {
-  color: var(--color-header-light);
+  color: var(--color-light);
 }
 
 .side-bar h2 {
@@ -95,7 +100,7 @@ body {
   font-size: var(--font-size-large);
   padding-top: 18px;
   margin-left: 24px;
-  border-bottom: 9px solid --color-secondary;
+  border-bottom: 9px solid var(--color-secondary);
   display: inline-block;
   width: 80%
 }
@@ -131,7 +136,7 @@ body {
   margin: var(--space-small);
   font-size: var(--font-size-small);
   color: var(--color-secondary);
-  padding-left: 20px;
+  padding-left: calc(var(--space-main)*2);
   padding-top: 7px;
 }
 
@@ -148,7 +153,7 @@ body {
   border-bottom: 9px solid var(--color-secondary);
   display: inline-block;
   width: 80%;
-  padding-bottom: 20px;
+  padding-bottom: calc(var(--space-main)*2);
 }
 
 .experience p {
@@ -170,8 +175,8 @@ body {
 .btn {
   width: 150px;
   height: 50px;
-  background-color: #0048D9;
-  border-radius: 6px;
+  background-color: var(--color-btn);
+  border-radius: var(--border-radius-medium);
 }
 
 .btn a {
@@ -184,7 +189,7 @@ body {
 }
 
 .btn:hover {
-  background-color: #002266;
+  background-color: var(--color-btn-hover);
 }
 
 /* FORM */
@@ -212,7 +217,7 @@ body {
 }
 
 .contact-form__table th {
-  width: 40%
+  width: 40%;
 }
 
 .form {
@@ -223,7 +228,7 @@ body {
 }
 
 .contact-form__table {
-  margin-bottom: 20px;
+  margin-bottom: calc(var(--space-main)*2);
 }
 
 .contact-form__table th {
@@ -237,7 +242,7 @@ body {
 }
 
 .checked:hover {
-  border: 1px solid black
+  border: 1px solid var(--color-black);
 }
 
 .checked:focus {
@@ -258,13 +263,13 @@ body {
   font-style: italic;
   padding: 0 var(--space-main);
   appearance: none;
-  background: #F8FAFC;
+  background: var(--bg-color-form);
   border: none
 }
 
 .contact-form__email:invalid {
   border: 2px solid red;
-  border-radius: 5px;
+  border-radius: var(--border-radius-medium);
 }
 
 .contact-form__textarea {
@@ -275,7 +280,7 @@ body {
   font-style: italic;
   padding: var(--space-main);
   border: none;
-  background: #F8FAFC;
+  background: var(--bg-color-form);
 }
 
 .contact label {
@@ -289,8 +294,8 @@ body {
 .contact-form__select {
   display: block;
   margin-left: var(--space-main);
-  width: 72%;
-  background-color: #f8fafc;
+  width: 73%;
+  background-color: var(--bg-color-form);
   height: 30px;
   border: none;
 }
@@ -302,7 +307,7 @@ body {
 .text-btn {
   font-size: var(--font-size-main);
   font-weight: 500;
-  color: var(--color-header-light);
+  color: var(--color-light);
   margin-left: var(--space-main);
   cursor: pointer;
   border: none;
@@ -314,7 +319,7 @@ div.btn {
 
 a.back-btn {
   padding: 15px 33px;
-  color: black;
+  color: var(--color-black);
 }
 
 .homepage-btn {
