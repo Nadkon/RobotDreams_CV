@@ -27,9 +27,10 @@
     <form action="./forms.html" method="get" class="form">
       <fieldset>
         <legend class="contact-form__legend">Contact form</legend>
-        <p class="email-container"><label>E-mail<span style="color:red;">*</span>:
-            <input type="email" name="email" required class="contact-form__email checked" placeholder="xxxxx@xxxxx.xxx">
-          </label>
+        <p class="email-container" for="email"><label class="required">E-mail</label>
+          <input type="email" name="email" id="email" required class="contact-form__email checked"
+            placeholder="xxxxx@xxxxx.xxx">
+
         </p>
         <p class="description-container">
           <label>Description:
@@ -39,6 +40,7 @@
         <p>
           <label>Work type:
             <select name="work-type" required class="contact-form__select checked">
+              <option value="select" disabled selected>Select the option</option>
               <option value="office">Office</option>
               <option value="remote">Remote</option>
               <option value="project-based">Project-based</option>

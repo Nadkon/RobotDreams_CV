@@ -31,6 +31,7 @@ body {
   --color-black: #000;
   --color-btn: #0048D9;
   --color-btn-hover: #002266;
+  --color-error: red;
   --bg-color-form: #f8fafc;
   --bg-color-left: #86a3b4;
 }
@@ -244,6 +245,11 @@ body {
   margin-left: var(--space-main);
 }
 
+.required::after {
+  content: "*";
+  color: var(--color-error);
+}
+
 .checked:hover {
   border: 1px solid var(--color-black);
 }
@@ -271,7 +277,7 @@ body {
 }
 
 .contact-form__email:invalid {
-  border: 2px solid red;
+  border: 2px solid var(--color-error);
   border-radius: var(--border-radius-medium);
 }
 
@@ -305,6 +311,10 @@ body {
 
 .contact-form__select option {
   font-size: var(--font-size-main);
+}
+
+select:has(option:disabled) {
+  color: var(--bg-color-left);
 }
 
 .text-btn {
