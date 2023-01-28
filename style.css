@@ -1,14 +1,4 @@
 :root {
-  /* color */
-  --color-main: #263036;
-  --color-secondary: #1E1E1E;
-  --color-header-blue: #1c2e8c;
-  --color-light: #fff;
-  --color-black: #000;
-  --color-btn: #0048D9;
-  --color-btn-hover: #002266;
-  --bg-color-form: #f8fafc;
-  --bg-color-left: #86a3b4;
 
   /* font */
   --font-size-main: 16px;
@@ -18,7 +8,7 @@
   --font-size-medium: 24px;
   --font-size-small: 20px;
 
-  /* ize */
+  /* size */
   --space-main: 10px;
   --space-small: 2px;
   --border-radius-large: 10px;
@@ -30,6 +20,31 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   color: var(--color-main);
+}
+
+.main-theme {
+  /* color */
+  --color-main: #263036;
+  --color-secondary: #1E1E1E;
+  --color-header-blue: #1c2e8c;
+  --color-light: #fff;
+  --color-black: #000;
+  --color-btn: #0048D9;
+  --color-btn-hover: #002266;
+  --bg-color-form: #f8fafc;
+  --bg-color-left: #86a3b4;
+}
+
+.my-theme {
+  --color-main: #0b151b;
+  --color-secondary: #af2828;
+  --color-header-blue: #1c8c49;
+  --color-light: rgb(231, 221, 221);
+  --color-black: rgb(12, 10, 10);
+  --color-btn: #b5d900;
+  --color-btn-hover: #1b6600;
+  --bg-color-form: #b2d1f0;
+  --bg-color-left: #dce5eb;
 }
 
 .body {
