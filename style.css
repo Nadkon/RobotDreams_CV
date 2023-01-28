@@ -84,10 +84,10 @@ body {
   position: relative;
 }
 
-.sticky-container {
+/* .sticky-container {
   position: sticky;
   top: 0;
-}
+} */
 
 .header_h1 {
   color: var(--color-header-blue);
@@ -341,4 +341,53 @@ a.back-btn {
 
 .homepage-btn:hover {
   background-color: blueviolet;
+}
+
+@media screen and (max-width: 1125px) {
+  .header_h1 {
+    font-size: var(--font-size-xlarge);
+    padding-left: calc(var(--space-main)*2);
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'side'
+      'summary'
+      'skills'
+      'experience'
+      'achievements'
+    ;
+  }
+
+  .header_h1 {
+    font-size: var(--font-size-2xlarge);
+    padding-left: calc(var(--space-main)*3);
+  }
+
+  .avatar {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .white {
+    display: block;
+  }
+
+  .side-bar__language {
+    padding-bottom: calc(var(--space-main) * 8);
+  }
+
+  .right-side_section h2 {
+    padding-top: var(--space-small)
+  }
+
+  .right-side_section {
+    padding-left: 27px;
+  }
+    .right-side_section h2{
+      width: 90%;
+    }
 }
