@@ -179,7 +179,7 @@ body {
 }
 
 .right-side-bar {
-  animation: loader 3s .5s linear;
+  animation: loader 3s 0.5s linear;
 
 }
 
