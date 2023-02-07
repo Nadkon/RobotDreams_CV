@@ -1,3 +1,7 @@
+/*
+1) при відкритті елементу контент лівого і правого блоків мають з'являтися знизу вгору з 0 прозорості один за одним з різницею в пів секунди
+*/
+
 :root {
 
   /* font */
@@ -56,8 +60,22 @@ body {
   margin: var(--space-main) auto;
 }
 
+
+@keyframes loader {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .side {
   grid-area: side;
+  animation: loader 3s linear;
 }
 
 .summary {
@@ -98,6 +116,10 @@ body {
 
 .white {
   color: var(--color-light);
+}
+
+.img {
+  transition: transform 1s ease-in 0s, filter 1s ease-in 1s;
 }
 
 .img:hover {
@@ -154,6 +176,7 @@ body {
 /* right-bar */
 .right-side_section {
   padding-left: 57px;
+  animation: loader 3s .5s linear;
 }
 
 .right-side_section h2 {
@@ -185,6 +208,7 @@ body {
 
 .previous-experience {
   opacity: 70%;
+  transition: opacity 1s ease-in 0s;
 }
 
 .previous-experience:hover {
@@ -241,9 +265,10 @@ body {
 
 .form {
   width: 500px;
-  position: sticky;
+  margin: 20px auto;
+  /* position: sticky;
   top: 31vh;
-  left: 30%;
+  left: 30%; */
 }
 
 .contact-form__table {
@@ -356,6 +381,22 @@ a.back-btn {
 
 .homepage-btn:hover {
   background-color: blueviolet;
+}
+
+form {
+  animation: formSizing 2s ease-in-out;
+}
+
+@keyframes formSizing {
+  from {
+    transform: scale(200%);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(100%);
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 1125px) {
