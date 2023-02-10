@@ -41,7 +41,6 @@ body {
   margin: $space-main auto;
 }
 
-//To put here @keyframes loader
 
 @mixin animation-loader($duration) {
   $name: loader;
