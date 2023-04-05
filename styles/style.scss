@@ -41,7 +41,6 @@ body {
   margin: $space-main auto;
 }
 
-
 @mixin animation-loader($duration) {
   $name: loader;
   @keyframes #{$name} {
@@ -94,7 +93,7 @@ body {
     }
     .img {
       transition: transform 1s ease-in 0s, filter 1s ease-in 1s;
-      &:hover {
+      &.animation {
         transform: scale(1.8) translate(76px, 50px);
         filter: drop-shadow(10px 10px 16px rgba(0, 0, 0, 0.25));
       }
@@ -146,6 +145,11 @@ body {
 /* right-bar */
 
 .right-side-bar {
+  sup {
+    font-size: $font-size-small;
+    color: blue;
+    border: 1px solid blue;
+  }
   @include animation-loader(3s);
   .section {
     padding-left: 57px;
@@ -419,4 +423,8 @@ form {
   .right-side_section h2 {
     width: 90%;
   }
+}
+
+// media queries
+@media (min-width: 992px) {
 }
